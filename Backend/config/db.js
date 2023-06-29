@@ -6,9 +6,9 @@ const connection = mongoose.connect(process.env.URL);
 const { createClient } = require("redis");
 
 const client = createClient({
-    password: 'hkOV8wBPrUIEqy6CJIsqhgC6DYfglQ7a',
+    password: process.env.PASS,
     socket: {
-        host: 'redis-11307.c305.ap-south-1-1.ec2.cloud.redislabs.com',
+        host: process.env.REDISHOST,
         port: 11307
     }
 });
