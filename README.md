@@ -1,5 +1,38 @@
 # ToDo-app
 ## used redis for the fast retrival of the data
+## Mongo DB is used to store the meta data
+# signup : https://todo-backend-tzf7.onrender.com/signup
+ -- body : {
+    "username" : "Vamshi",
+    "email" : "vamshi@gmail.com",
+    "password" : "vamshi"
+}
+
+# signup : https://todo-backend-tzf7.onrender.com/login
+ -- body : {
+    "email" : "vamshi@gmail.com",
+    "password" : "vamshi"
+}
+
+# to create a todo : https://todo-backend-tzf7.onrender.com/create
+ --  Authuntication token is needed 
+ -- body : {
+    "title" : "To do cook",
+    "desc" : "to do the hack",
+    "priority" : "low"
+}
+
+# to get the todo : https://todo-backend-tzf7.onrender.com/getlist
+
+# To delete the todo : https://todo-backend-tzf7.onrender.com/delete/649d278a8d5b22c6b382c3ff
+ -- id is needed to delete
+
+# to update a todo : https://todo-backend-tzf7.onrender.com/update/649d274b8d5b22c6b382c3fa
+ -- id is needed to update
+ -- body : {
+     "title": "to do hack",
+     "desc": "to do the hack"
+}
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
